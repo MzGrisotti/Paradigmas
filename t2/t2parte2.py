@@ -19,7 +19,6 @@ def svgImage(w, h, rs):
 def applyStyles(rects, styles):
    return list(zip(rects, itertools.cycle(styles)))
 
-# TODO: modifique essa funcao para gerar mais retangulos
 def genRects(n, w, h):
    m = [(((i*50),0.0),w,h) for i in range(n)]
    return m
@@ -29,8 +28,6 @@ def writeFile(fname, contents):
    f.write(contents)
    f.close()
 
-# Função geradora de cores
-# Gera uma paleta de vermelhos
 def genColors(n):
     r = [40+i*8 for i in range(n)]
     g = [1+i for i in range(n)]
@@ -38,7 +35,6 @@ def genColors(n):
     m = ["fill:rgb(%d,%d,%d)" %(r[i], g[i], b[i]) for i in range(n)]
     return m
 
-   
 def main():
    maxWidth = 1000
    maxHeight = 100
