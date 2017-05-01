@@ -15,11 +15,11 @@ public:
    }
    Point(double x1, double y1) {
       x = x1;
-	  y = y1;
-	  std::cout<<"Ponto: ("<<x<<", "<<y<<")"<<std::endl;
+      y = y1;
+      std::cout<<"Ponto: ("<<x<<", "<<y<<")"<<std::endl;
    }
    double distanceTo(Point* p2) {
-     return std::sqrt(((x - p2->x)*(x - p2->x))+((y - p2->y))*(y - p2->y));
+      return std::sqrt(((x - p2->x)*(x - p2->x))+((y - p2->y))*(y - p2->y));
    }
 };
 
@@ -34,17 +34,17 @@ public:
       r = 0;
    }
    Circle(double x, double y, double r1){
-	  p = Point(x, y);
-	  r = r1;
+      p = Point(x, y);
+      r = r1;
    }
    double area() {
       return PI * r * r;
    }
    void setRadius(double radius){
-   	  r = radius;
+      r = radius;
    }
    double distanceTo(Circle* c2) {	
-		std::cout<<"A distancia c1 e c2 eh: "<<((p.distanceTo(&(c2->p))) - (r + c2->r))<<std::endl;
+      std::cout<<"A distancia c1 e c2 eh: "<<((p.distanceTo(&(c2->p))) - (r + c2->r))<<std::endl;
    }
 };
 
