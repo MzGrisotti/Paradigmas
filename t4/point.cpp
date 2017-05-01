@@ -32,14 +32,11 @@ int main(){
 	int i;
 	for (i=0; i<5; i++){
 	  p1[i] = new Point(std::rand()%50, std::rand()%50);
-	}
-		
+	}	
 	for (i=0; i<5; i++){
 	  std::cout<< p.distanceTo(&p, p1[i]) << std::endl;
 	}
-
 	for (i=4; i>=0; i--){
 	  free(p1[i]);
-	}
-			
+	}			
 }
