@@ -12,7 +12,7 @@ UserInterface::UserInterface() {
   	  boxImg = new Fl_Box(0, 0, 500, 600);
   	  boxImg->image(myimage);
   	  boxImg->redraw();
-	} //aqui para a logo
+	}
     { inputValue1 = new Fl_Int_Input(150, 255, 200, 30);
       inputValue1->type(2);
       inputValue1->labeltype(FL_NO_LABEL);
