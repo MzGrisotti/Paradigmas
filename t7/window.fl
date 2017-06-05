@@ -1,0 +1,36 @@
+# data file for the Fltk User Interface Designer (fluid)
+version 1.0304
+header_name {.h}
+code_name {.cxx}
+class UserInterface {open
+} {
+  Function {UserInterface()} {open
+  } {
+    Fl_Window w {
+      label Sorteio open
+      protected xywh {628 301 500 600} type Double box BORDER_BOX color 54 labelcolor 48 visible
+    } {
+      Fl_Input inputValue1 {
+        protected xywh {150 255 200 30} type Int labeltype NO_LABEL labelsize 20 align 1
+      }
+      Fl_Box boxResult {
+        protected xywh {75 365 350 125} box RSHADOW_BOX color 54 labelsize 28
+      }
+      Fl_Button btnSorteio {
+        label Sortear
+        protected xywh {100 520 300 40} box ROUND_UP_BOX down_box ROUND_DOWN_BOX color 40 selection_color 40 labelfont 8 labelsize 32 labelcolor 55
+      }
+      Fl_Button btnReset {
+        label Reset
+        protected xywh {375 255 100 28} box GTK_UP_BOX down_box GTK_DOWN_BOX color 40 selection_color 40 labelfont 1 labelcolor 55
+      }
+      Fl_Box boxGanhador {
+        protected xywh {165 313 174 35} box DOWN_BOX color 51 selection_color 48
+      }
+      Fl_Box {} {
+        label Participantes
+        xywh {60 262 30 16} labelfont 8 labelsize 26
+      }
+    }
+  }
+}
